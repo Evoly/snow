@@ -1,0 +1,37 @@
+
+@font-face {
+    font-family: 'Pe-icon-7-stroke';
+    src: url('../resources/fonts/Pe-icon-7-stroke.ttf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PlayfairDisplay-Bold';
+    src: url('../resources/fonts/PlayfairDisplay-Bold.ttf');
+    font-style: normal;
+}
+@font-face {
+    font-family: 'PlayfairDisplay-Italic';
+    src: url('../resources/fonts/PlayfairDisplay-Italic.ttf');
+    font-style: normal;
+}
+@font-face {
+    font-family: 'PlayfairDisplay-Regular';
+    src: url('../resources/fonts/PlayfairDisplay-Regular.ttf');
+    font-style: normal;
+}
+@font-face {
+    font-family: 'WorkSans-Bold';
+    src: url('../resources/fonts/WorkSans-Bold.ttf');
+    font-style: normal;
+}
+@font-face {
+    font-family: 'WorkSans-Medium';
+    src: url('../resources/fonts/WorkSans-Medium.ttf');
+    font-style: normal;
+}
+@font-face {
+    font-family: 'WorkSans-Regular';
+    src: url('../resources/fonts/WorkSans-Regular.ttf');
+    font-style: normal;
+}
