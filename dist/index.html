@@ -10,7 +10,7 @@
 
   <title>Title</title>
 
-
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
 
   <!-- slider -->
@@ -27,23 +27,35 @@
 <body>
   <!--header start-->
   <header class="header">
-    <div class="container">
-      <div class="site-nav flex">
-        <div class="logo">
-          svg
-        </div>
-        <div class="navbar-toggle">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </div>
-        <nav class="nav flex">
-          <a href="#about">about</a>
-          <a href="#contact">contact</a>
-          <a href="#portfolio">portfolio</a>
-          <a href="#blog">blog</a>
-        </nav>
+    <div class="nav-wrap">
+      <div class="container ">
+        <div class="site-nav flex">
+          <div class="bg-mobile">
+            <img src="resources/images/bg-menu.jpg" alt="">
+          </div>
+          <svg class="logo" title="logo">
+            <use xlink:href="resources/images/logo.svg#logo"></use>
+          </svg>
+          <!-- <img src="resources/images/logo.svg" alt=""> -->
+          <div class="navbar-toggle">
+            <div class="burger">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </div>
+            <div class="cross">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </div>
 
+          </div>
+          <nav class="nav flex">
+            <a href="#about">about</a>
+            <a href="#contact">contact</a>
+            <a href="#portfolio">portfolio</a>
+            <a href="#blog">blog</a>
+          </nav>
+        </div>
       </div>
     </div>
   </header>
@@ -51,30 +63,341 @@
 
   <!-- content start-->
   <div class="main">
-
-
-    <section class='main-section section-1'>
+    <section class='section-1'>
       <div class="img_big">
         <img src="resources/images/home.jpg" alt="">
+        <a class="arrow flex" href="#about">
+        <svg  title="arrow" viewBox="0 0 30 30">
+          <use xlink:href="resources/images/checked.svg#arrow"></use>
+        </svg>
+      </a>
       </div>
       <div class="container">
         <div class="section-1__content flex">
           <h1 class="section-1__header">New Branding Agency</h1>
-          <p class="section-1__subheader">We are about to change the way you publish on the web</p>
+          <p class="section-1__subheader">We are about to change the way <br> <span>you publish on the web</span></p>
         </div>
       </div>
     </section>
+    <section class="section section-2" id="about">
+      <div class="container">
+        <h2 class="section__header">About Our Agency</h2>
+        <p class="section__text">We are a new design studio based in USA. We have over 20 years of combined experience, and know a thing or two about designing websites and mobile apps. Clever use of technology and lean processes enable us to work faster and smarter.</p>
+        <img src="resources/images/signature.svg" alt="">
+      </div>
+      <div class="bg-image">
+        <div class="container">
+          <div class="section-2__content flex">
+            <div class="section-2__item">
+              <div class="section-2__wrap flex">
+                <span class="icon icon-portfolio"></span>
+                <div class="">
+                  <p>548</p>
+                  <p class="">Projects Completed</p>
+                </div>
+              </div>
+            </div>
+            <div class="section-2__item">
+              <div class="section-2__wrap flex">
+                <span class="icon icon-clock"></span>
+                <div class="">
+                  <p>1465</p>
+                  <p>WORKING HOURS</p>
+                </div>
+              </div>
+            </div>
+            <div class="section-2__item">
+              <div class="section-2__wrap flex">
+                <span class="icon icon-star"></span>
+                <div class="">
+                  <p>612</p>
+                  <p>POSITIVE FEEDBACKS</p>
+                </div>
+              </div>
+            </div>
+            <div class="section-2__item">
+              <div class="section-2__wrap flex">
+                <span class="icon icon-heart"></span>
+                <div class="">
+                  <p>735</p>
+                  <p>HAPPY CLIENTS</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section container" id="portfolio">
+      <h2 class="section__header">Best Projects</h2>
+      <p class="section__text">Donec orci sem, pretium ac dolor et, faucibus faucibus mauris. Etiam,pellentesque faucibus. Vestibulum gravida volutpat ipsum non ultrices.</p>
+
+      <div class="portfolio__list flex">
+        <div class="portfolio__item flex">
+          <a class="portfolio__img" href="#">
+              <img src="resources/images/portfolio-1-sm.jpg" alt="">
+          </a>
+          <div class="portfolio__info flex">
+            <h3 class="portfolio__title">Paper Bag</h3>
+            <p class="portfolio__category">Photography</p>
+          </div>
+        </div>
+        <div class="portfolio__item flex">
+          <a class="portfolio__img" href="#">
+              <img src="resources/images/portfolio-2-sm.jpg" alt="">
+          </a>
+          <div class="portfolio__info flex">
+            <h3 class="portfolio__title">Business Card</h3>
+            <p class="portfolio__category">Branding</p>
+          </div>
+        </div>
+        <div class="portfolio__item flex">
+          <a class="portfolio__img" href="#">
+              <img src="resources/images/portfolio-3-sm.jpg" alt="">
+          </a>
+          <div class="portfolio__info flex">
+            <h3 class="portfolio__title">Minimal Mobile App</h3>
+            <p class="portfolio__category">design</p>
+          </div>
+        </div>
+        <div class="portfolio__item flex">
+          <a class="portfolio__img" href="#">
+              <img src="resources/images/portfolio-4-sm.jpg" alt="">
+          </a>
+          <div class="portfolio__info flex">
+            <h3 class="portfolio__title">Vinyl Record</h3>
+            <p class="portfolio__category">design</p>
+          </div>
+        </div>
+        <div class="portfolio__item flex">
+          <a class="portfolio__img" href="#">
+              <img src="resources/images/portfolio-5-sm.jpg" alt="">
+          </a>
+          <div class="portfolio__info flex">
+            <h3 class="portfolio__title">Minimal Bag</h3>
+            <p class="portfolio__category">Branding</p>
+          </div>
+        </div>
+        <div class="portfolio__item flex">
+          <a class="portfolio__img" href="#">
+              <img src="resources/images/portfolio-6-sm.jpg" alt="">
+          </a>
+          <div class="portfolio__info flex">
+            <h3 class="portfolio__title">Heja Stockholm</h3>
+            <p class="portfolio__category">Photography</p>
+          </div>
+        </div>
+        <div class="portfolio__item flex">
+          <a class="portfolio__img" href="#">
+              <img src="resources/images/portfolio-7-sm.jpg" alt="">
+          </a>
+          <div class="portfolio__info flex">
+            <h3 class="portfolio__title">Vinyl Record</h3>
+            <p class="portfolio__category">Mockup</p>
+          </div>
+        </div>
+        <div class="portfolio__item flex">
+          <a class="portfolio__img" href="#">
+              <img src="resources/images/portfolio-8-sm.jpg" alt="">
+          </a>
+          <div class="portfolio__info flex">
+            <h3 class="portfolio__title">White T-Shirt</h3>
+            <p class="portfolio__category">Print</p>
+          </div>
+        </div>
+        <div class="portfolio__item flex">
+          <a class="portfolio__img" href="#">
+              <img src="resources/images/portfolio-9-sm.jpg" alt="">
+          </a>
+          <div class="portfolio__info flex">
+            <h3 class="portfolio__title">Clean &amp; Groovy</h3>
+            <p class="portfolio__category">design</p>
+          </div>
+        </div>
+      </div>
+      <a href="#0" class="btn btn_show-all flex ">Show all</a>
+    </section>
+    <section class="section bg-image">
+      <!-- slider feedback -->
+      <div class="slider-1 container">
+        <div>
+          <blockquote class="blackquote">
+            <p>Outstanding job and exceeded all expectations. It was a pleasure to work with them on a sizable first project and am looking forward to start the next one asap.</p>
+            <cite>Michael Hopkins</cite>
+          </blockquote>
+        </div>
+        <div>
+          <blockquote class="blackquote">
+            <p>Outstanding job and exceeded all expectations. It was a pleasure to work with them on a sizable first project and am looking forward to start the next one asap.</p>
+            <cite>Michael Hopkins</cite>
+          </blockquote>
+        </div>
+        <div>
+          <blockquote class="blackquote">
+            <p>Outstanding job and exceeded all expectations. It was a pleasure to work with them on a sizable first project and am looking forward to start the next one asap.</p>
+            <cite>Michael Hopkins</cite>
+          </blockquote>
+        </div>
+
+      </div>
+    </section>
+    <section>
+      <!-- slider partners -->
+      <div class="slider-2 container">
+        <img src="resources/images/partner-logo-1-dark.png" alt="">
+        <img src="resources/images/partner-logo-2-dark.png" alt="">
+        <img src="resources/images/partner-logo-3-dark.png" alt="">
+        <img src="resources/images/partner-logo-4-dark.png" alt="">
+        <img src="resources/images/partner-logo-5-dark.png" alt="">
+        <img src="resources/images/partner-logo-6-dark.png" alt="">
+        <img src="resources/images/partner-logo-7-dark.png" alt="">
+        <img src="resources/images/partner-logo-8-dark.png" alt="">
+      </div>
+    </section>
+    <section class="section background-gray-2" id='blog'>
+      <div class="container">
+        <h2 class="section__header">Latest Blog</h2>
+        <p class="section__text">Aliquam accumsan aliquet risus eu ornare.In eget justo nec elit porttitor tempus non a neque. Vestibulum gravida volutpat ipsum non ultrices.</p>
+        <div class="slider-3">
+          <div class="slider-3__wrap">
+            <div class="slider-3__item">
+              <div class="slider-3__img">
+                <a class="" href="#">
+                    <img src="resources/images/post-1-mid.jpg" alt="">
+                </a>
+                <a class="category" href="#">nature</a>
+              </div>
+              <div class="slider-3__content">
+                <h4 class="slider-3__title">The History of Nature</h4>
+                <p class="slider-3__data">August 14, 2016</p>
+                <p>In eget justo nec elit porttitor tempus non a neque. Ut mi lacus, consequat id lectus sed, porttitor eleifend diam.</p>
+              </div>
+            </div>
+          </div>
+          <div class="slider-3__wrap">
+            <div class="slider-3__item">
+              <div class="slider-3__img">
+                <a class="" href="#">
+                      <img src="resources/images/post-2-mid.jpg" alt="">
+                  </a>
+                <a class="category" href="#">branding</a>
+              </div>
+              <div class="slider-3__content">
+                <h4 class="slider-3__title">Are you doing the Right Way?</h4>
+                <p class="slider-3__data">August 14, 2016</p>
+                <p>In eget justo nec elit porttitor tempus non a neque. Ut mi lacus, consequat id lectus sed, porttitor eleifend diam.</p>
+              </div>
+            </div>
+          </div>
+          <div class="slider-3__wrap">
+            <div class="slider-3__item">
+              <div class="slider-3__img">
+                <a class="" href="#">
+                        <img src="resources/images/post-3-mid.jpg" alt="">
+                    </a>
+                <a class="category" href="#">Design</a>
+              </div>
+              <div class="slider-3__content">
+                <h4 class="slider-3__title">Something I need to tell you</h4>
+                <p class="slider-3__data">August 14, 2016</p>
+                <p>In eget justo nec elit porttitor tempus non a neque. Ut mi lacus, consequat id lectus sed, porttitor eleifend diam.</p>
+              </div>
+            </div>
+          </div>
+          <div class="slider-3__wrap">
+            <div class="slider-3__item">
+              <div class="slider-3__img">
+                <a class="" href="#">
+                          <img src="resources/images/post-4-mid.jpg" alt="">
+                      </a>
+                <a class="category" href="#">Design</a>
+              </div>
+              <div class="slider-3__content">
+                <h4 class="slider-3__title">Why you should Always First</h4>
+                <p class="slider-3__data">August 14, 2016</p>
+                <p>In eget justo nec elit porttitor tempus non a neque. Ut mi lacus, consequat id lectus sed, porttitor eleifend diam.</p>
+              </div>
+            </div>
+          </div>
+          <div class="slider-3__wrap">
+            <div class="slider-3__item">
+              <div class="slider-3__img">
+                <a class="" href="#">
+                            <img src="resources/images/post-5-mid.jpg" alt="">
+                        </a>
+                <a class="category" href="#">Design</a>
+              </div>
+              <div class="slider-3__content">
+                <h4 class="slider-3__title">Ten things about Photography</h4>
+                <p class="slider-3__date">August 14, 2016</p>
+                <p>In eget justo nec elit porttitor tempus non a neque. Ut mi lacus, consequat id lectus sed, porttitor eleifend diam.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <a href="#0" class="btn btn_show-all flex ">Show all</a>
+      </div>
+    </section>
+    <section class="section background-gray-1" id='contact'>
+      <div class="container">
+        <div class="contact flex">
+          <div class="contact__info">
+            <h2 class="section__header">Contact Info:</h2>
+            <p class="">Aliquam accumsan aliquet risus eu ornare.In eget justo nec elit porttitor tempus non a neque. Vestibulum gravida volutpat ipsum non ultrices.</p>
+            <p class="contact__text"><span>Address:</span> 10111 Santa Monica Boulevard, LA</p>
+            <p class="contact__text"><span>Phone:</span> +44 987 065 908</p>
+            <p class="contact__text"><span>Email:</span> info@Example.com</p>
+            <p class="contact__text"><span>Fax:</span> +44 987 065 909</p>
+          </div>
+          <div class="contact__form">
+            <form class="form flex" action="#" method="post">
+              <input class="form-control" type="text" placeholder="Your Name">
+              <input class="form-control" type="tel" placeholder="Your Email">
+              <textarea class="form-control message required" name="message" rows="8" placeholder="Your Comment" aria-required="true"></textarea>
+              <button class="btn btn_contact flex " disabled>Send Message</button>
 
 
-
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
   <!-- content end-->
 
 
   <!--footer start-->
 
-  <footer class="footer-wr">
+  <footer class="footer background-gray-3">
+    <div class="container">
+      <div class="footer__content flex">
+        <div class="social-links flex">
+          <a href="#0">
+            <i class="fa fa-twitter"></i>
+        </a>
+          <a href="#0">
+            <i class="fa fa-facebook"></i>
+        </a>
+          <a href="#0">
+            <i class="fa fa-dribbble"></i>
+        </a>
+          <a href="#0">
+            <i class="fa fa-instagram"></i>
+        </a>
 
+
+
+
+          <!-- <a href="#">
+          <svg  title="instagram" >
+            <use xlink:href="resources/images/instagram.svg#instagram"></use>
+          </svg>
+        </a> -->
+        </div>
+        <p>2016-2017 © Design by Unvab.</p>
+      </div>
+    </div>
   </footer>
 
   <!--footer end-->
