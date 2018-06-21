@@ -12,6 +12,7 @@ const browserSync = require('browser-sync');
 const svgSprite = require("gulp-svg-sprites");
 const svgSymbols = require('gulp-svg-symbols');
 const rename = require("gulp-rename");
+const cleanCSS = require('gulp-clean-css');
 
 
 gulp.task('sass', function(){
@@ -43,6 +44,22 @@ gulp.task('scripts', function() {
   return gulp.src('src/scripts/**', {since: gulp.lastRun('scripts')})
       .pipe(newer('dist'))
       .pipe(gulp.dest('dist/scripts'))
+});
+// gulp.task('sprites', function () {
+//     return gulp.src('src/resources/images/*.svg')
+//         .pipe(svgSprite({
+//           mode: "defs",
+//           preview: false,
+//           svg: {
+//                 sprite: "sprite.svg"
+//             }
+//         }))
+//         .pipe(gulp.dest("dist/resources/images"));
+// });
+gulp.task('minify-css', () => {
+  return gulp.src('dist/css/style.css')
+    .pipe(cleanCSS({compatibility: 'ie8'}))
+    .pipe(gulp.dest('dist/css'));
 });
 
 gulp.task('build', gulp.series(

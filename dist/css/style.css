@@ -569,11 +569,12 @@ html {
   z-index: 3; }
   .header .site-nav .logo {
     width: 100px;
+    height: 50px;
     fill: #fff; }
     @media (max-width: 767px) {
       .header .site-nav .logo {
         padding-top: 5px;
-        height: 35px; } }
+        height: 45px; } }
   .header .site-nav .bg-mobile {
     display: none;
     position: absolute;
@@ -888,73 +889,75 @@ html {
 .background-gray-3 {
   background-color: #ebebeb; }
 
-.section-2__content {
-  -ms-flex-direction: row;
-      flex-direction: row;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  -ms-flex-align: center;
-      align-items: center;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
-  min-height: 260px; }
-  @media (max-width: 767px) {
-    .section-2__content {
-      -ms-flex-direction: column;
-          flex-direction: column;
-      -ms-flex-align: start;
-          align-items: flex-start; } }
-
-.section-2__wrap {
-  -ms-flex-direction: row;
-      flex-direction: row;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  position: relative;
-  -ms-flex-align: center;
-      align-items: center;
-  -ms-flex-pack: justify;
-      justify-content: space-between; }
-
-.section-2__item {
-  height: 100%;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-pack: start;
-      justify-content: flex-start;
-  -ms-flex-align: center;
-      align-items: center;
-  text-transform: uppercase;
-  font-size: 0.9em;
-  font-weight: 700;
-  color: #fff; }
-  @media (max-width: 767px) {
-    .section-2__item {
-      padding-top: 25px; } }
-  @media (max-width: 767px) {
-    .section-2__item:last-child {
-      padding-bottom: 25px; } }
-  .section-2__item .icon {
-    width: 50px;
-    height: 50px;
-    margin-right: 25px;
-    font-family: Pe-icon-7-stroke;
-    font-size: 3.3em;
-    speak: none;
-    font-style: normal;
-    font-weight: 400;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased; }
-  .section-2__item .icon-clock:before {
-    content: "\e66b"; }
-  .section-2__item .icon-portfolio:before {
-    content: "\e622"; }
-  .section-2__item .icon-star:before {
-    content: "\e611"; }
-  .section-2__item .icon-heart:before {
-    content: "\e642"; }
+.section-2 {
+  text-align: center; }
+  .section-2 img {
+    padding-bottom: 30px; }
+  .section-2__content {
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    min-height: 260px; }
+    @media (max-width: 767px) {
+      .section-2__content {
+        -ms-flex-direction: column;
+            flex-direction: column;
+        -ms-flex-align: start;
+            align-items: flex-start; } }
+  .section-2__wrap {
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    position: relative;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: justify;
+        justify-content: space-between; }
+  .section-2__item {
+    height: 100%;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+    -ms-flex-align: center;
+        align-items: center;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    font-weight: 700;
+    color: #fff; }
+    @media (max-width: 767px) {
+      .section-2__item {
+        padding-top: 25px; } }
+    @media (max-width: 767px) {
+      .section-2__item:last-child {
+        padding-bottom: 25px; } }
+    .section-2__item .icon {
+      width: 50px;
+      height: 50px;
+      margin-right: 25px;
+      font-family: Pe-icon-7-stroke;
+      font-size: 3.3em;
+      speak: none;
+      font-style: normal;
+      font-weight: 400;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+      -webkit-font-smoothing: antialiased; }
+    .section-2__item .icon-clock:before {
+      content: "\e66b"; }
+    .section-2__item .icon-portfolio:before {
+      content: "\e622"; }
+    .section-2__item .icon-star:before {
+      content: "\e611"; }
+    .section-2__item .icon-heart:before {
+      content: "\e642"; }
 
 .blackquote {
   max-width: 750px;
